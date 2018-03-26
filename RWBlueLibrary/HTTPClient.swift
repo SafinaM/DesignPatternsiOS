@@ -31,7 +31,7 @@
 import UIKit
 
 class HTTPClient {
-  
+	
   @discardableResult func getRequest(_ url: String) -> AnyObject {
     return Data() as AnyObject
   }
