@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B79488D20692B29002950A3 /* LibraryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B79488B20692B29002950A3 /* LibraryAPI.swift */; };
+		2B79488E20692B29002950A3 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B79488C20692B29002950A3 /* PersistencyManager.swift */; };
 		79F6FC411F14251800E22ED5 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6FC401F14251800E22ED5 /* Album.swift */; };
 		79F6FC431F14254E00E22ED5 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6FC421F14254E00E22ED5 /* AlbumView.swift */; };
 		EDDF66161EBD28EF006123DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDF66151EBD28EF006123DA /* AppDelegate.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B79488B20692B29002950A3 /* LibraryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
+		2B79488C20692B29002950A3 /* PersistencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
 		79F6FC401F14251800E22ED5 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		79F6FC421F14254E00E22ED5 /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		EDDF66121EBD28EF006123DA /* RWBlueLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWBlueLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +45,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B79488820692A72002950A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79F6FC401F14251800E22ED5 /* Album.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2B79488920692A90002950A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EDDF66171EBD28EF006123DA /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2B79488A20692AC5002950A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79F6FC421F14254E00E22ED5 /* AlbumView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		EDDF66091EBD28EF006123DA = {
 			isa = PBXGroup;
 			children = (
@@ -62,15 +90,15 @@
 		EDDF66141EBD28EF006123DA /* RWBlueLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				79F6FC401F14251800E22ED5 /* Album.swift */,
-				79F6FC421F14254E00E22ED5 /* AlbumView.swift */,
-				EDDF66211EBD28EF006123DA /* Info.plist */,
-				EDDF66151EBD28EF006123DA /* AppDelegate.swift */,
-				EDDF66171EBD28EF006123DA /* ViewController.swift */,
-				EDDF661C1EBD28EF006123DA /* Assets.xcassets */,
 				EDDF66351EBD2B5F006123DA /* API */,
+				EDDF66151EBD28EF006123DA /* AppDelegate.swift */,
+				2B79488920692A90002950A3 /* Controller */,
+				EDDF66211EBD28EF006123DA /* Info.plist */,
+				EDDF661C1EBD28EF006123DA /* Assets.xcassets */,
 				EDDF661E1EBD28EF006123DA /* LaunchScreen.storyboard */,
 				EDDF66191EBD28EF006123DA /* Main.storyboard */,
+				2B79488820692A72002950A3 /* Model */,
+				2B79488A20692AC5002950A3 /* View */,
 			);
 			path = RWBlueLibrary;
 			sourceTree = "<group>";
@@ -79,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				EDDF66361EBD2B8C006123DA /* HTTPClient.swift */,
+				2B79488B20692B29002950A3 /* LibraryAPI.swift */,
+				2B79488C20692B29002950A3 /* PersistencyManager.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -158,9 +188,11 @@
 			files = (
 				EDDF66181EBD28EF006123DA /* ViewController.swift in Sources */,
 				EDDF66371EBD2B8C006123DA /* HTTPClient.swift in Sources */,
+				2B79488D20692B29002950A3 /* LibraryAPI.swift in Sources */,
 				EDDF66161EBD28EF006123DA /* AppDelegate.swift in Sources */,
 				79F6FC431F14254E00E22ED5 /* AlbumView.swift in Sources */,
 				79F6FC411F14251800E22ED5 /* Album.swift in Sources */,
+				2B79488E20692B29002950A3 /* PersistencyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
